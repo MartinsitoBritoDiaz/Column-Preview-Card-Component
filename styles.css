@@ -62,7 +62,7 @@ body{
 }
 
 .card-paragraph{
-    margin: 2rem 0rem;
+    margin: 0rem;
     padding: 0rem;
     
     line-height: 2rem;
@@ -75,6 +75,28 @@ body{
 }
 
 .card-button{
-    margin: 4rem 0rem;
+    margin: 0rem;
     padding: 0rem;
+
+    width: 10rem;
+    height: 3.5rem;
+
+    text-decoration: none;    
+    font-family: 'Lexend Deca', sans-serif;
+
+    border-color: none;
+    border-radius: 1.8rem;
+    background-color: var(--Very-light-gray);
+}
+
+.orange{
+    color: var(--Bright-orange);
+}
+
+.DarkCyan{
+    color: var(--Dark-cyan);
+}
+
+.VeryDarkCyan{
+    color: var(--Very-dark-cyan);
 }
