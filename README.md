@@ -7,11 +7,12 @@
 Thanks for checking out this front-end coding challenge.
 
 ## Buit with
-    * HTML
-    * CSS
+    >_ HTML
+    >_ CSS
 
 ## Links
 
+https://flamboyant-wiles-05df01.netlify.app/
 
 ## Author
 
