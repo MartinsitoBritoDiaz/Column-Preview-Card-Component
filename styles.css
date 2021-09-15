@@ -25,7 +25,6 @@ body{
 }
 
 .container{
-    max-height: 97vw;
     min-height: 97vh;
     display: flex;
     align-items: center;
@@ -36,7 +35,12 @@ body{
     width: 25rem;
     height: 40rem;
 
-    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;    
+    
+    padding: 0rem 3.5rem;
     color: white;
 }
 
@@ -55,7 +59,7 @@ body{
 }
 
 .card-title{
-    margin: 2rem 0rem;
+    margin: -4rem 0rem;
     padding: 0rem;
 
     text-transform: uppercase;
@@ -84,19 +88,53 @@ body{
     text-decoration: none;    
     font-family: 'Lexend Deca', sans-serif;
 
-    border-color: none;
+    cursor: pointer;
+    border: none;
     border-radius: 1.8rem;
     background-color: var(--Very-light-gray);
 }
 
-.orange{
+.card-button:hover{
+    border: 0.1rem solid white;
+    color: var(--Very-light-gray);
+    background-color: transparent;
+}
+
+.card-button--orange{
     color: var(--Bright-orange);
 }
 
-.DarkCyan{
+.card-button--DarkCyan{
     color: var(--Dark-cyan);
 }
 
-.VeryDarkCyan{
+.card-button--VeryDarkCyan{
     color: var(--Very-dark-cyan);
+}
+
+@media (max-width: 460px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 30rem;
+        height: 35rem;
+    }
+
+    .card:nth-child(1){
+        border-radius: 1rem 1rem 0rem 0rem;
+        background-color: var(--Bright-orange);
+    }
+    
+    .card:nth-child(2){
+        background-color: var(--Dark-cyan);
+    }
+    
+    .card:nth-child(3){
+        border-radius: 0rem 0rem 1rem 1rem;
+        background-color: var(--Very-dark-cyan);
+    }   
+
+    
 }
